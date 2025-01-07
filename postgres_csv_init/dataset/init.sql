@@ -28,6 +28,6 @@ CREATE TABLE cars (
 );
 
 COPY cars
-FROM '/dockerentrypointinitdb.d/Automobile_data.csv'
+FROM '/docker-entrypoint-initdb.d/Automobile_data.csv'
 DELIMITER ','
 CSV HEADER;

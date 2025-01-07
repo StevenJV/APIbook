@@ -1,33 +1,33 @@
 CREATE TABLE cars (
   symboling TEXT,
-  normalized-losses TEXT,
+  normalizedlosses TEXT,
   make TEXT,
-  fuel-type TEXT,
+  fueltype TEXT,
   aspiration TEXT,
-  num-of-doors TEXT,
-  body-style TEXT,
-  drive-wheels TEXT,
-  engine-location TEXT,
-  wheel-base TEXT,
+  numofdoors TEXT,
+  bodystyle TEXT,
+  drivewheels TEXT,
+  enginelocation TEXT,
+  wheelbase TEXT,
   length TEXT,
   width TEXT,
   height TEXT,
-  curb-weight TEXT,
-  engine-type TEXT,
-  num-of-cylinders TEXT,
-  engine-size TEXT,
-  fuel-system TEXT,
+  curbweight TEXT,
+  enginetype TEXT,
+  numofcylinders TEXT,
+  enginesize TEXT,
+  fuelsystem TEXT,
   bore TEXT,
   stroke TEXT,
-  compression-ratio TEXT,
+  compressionratio TEXT,
   horsepower TEXT,
-  peak-rpm TEXT,
-  city-mpg TEXT,
-  highway-mpg TEXT,
+  peakrpm TEXT,
+  citympg TEXT,
+  highwaympg TEXT,
   price TEXT
 );
 
 COPY cars
-FROM '/docker-entrypoint-initdb.d/Automobile_data.csv'
+FROM '/dockerentrypointinitdb.d/Automobile_data.csv'
 DELIMITER ','
 CSV HEADER;
